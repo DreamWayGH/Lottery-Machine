@@ -1,0 +1,181 @@
+@font-face {
+  font-family: Yu-Gothic-Medium;
+  src: url(../lib/Yu-Gothic-Medium.ttf) format("truetype"),
+    url(../lib/Lucida-Handwriting-Italic.ttf) format("truetype"), local("arial"),
+    local("Microsoft JhengHei");
+}
+@font-face {
+  font-family: HARLOWSI;
+  src: url(../lib/HARLOWSI.TTF) format("truetype"),
+    url(../lib/Yu-Gothic-Medium.ttf) format("truetype"), local("arial"),
+    local("Microsoft JhengHei");
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  background: transparent;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid slategrey;
+}
+::-webkit-scrollbar-track {
+  box-shadow: transparent;
+}
+
+.main-wrap {
+  font-family: HARLOWSI;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.setting-wrap {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.setting-wrap > div {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.setting-wrap > input {
+  font-family: HARLOWSI;
+  padding: 1rem 1rem 1rem 2rem;
+  margin: 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  font-size: 2rem;
+  width: 8rem;
+  text-align: center;
+  color: #1d6ab3;
+}
+.setting-wrap > button {
+  font-family: Yu-Gothic-Medium;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 10rem 0 7rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: 2px solid #ccc;
+  background-color: #d7fafe;
+  box-shadow: 3px 3px 5px #ccc;
+  color: #1d6ab3;
+}
+.setting-wrap > button:hover {
+  color: #937107;
+  border: 2px solid;
+}
+
+.main-num-wrap {
+  width: 60rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-num-wrap > .num-back {
+  display: flex;
+  border: 1px solid #ccc;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(top, #fefefe, #D7FAFE);
+  border: 5px solid #ccc;
+  border-radius: 5rem;
+  box-shadow: 0px 0px 10px 16px #eee;
+}
+.main-num-wrap > .num-back > div {
+  font-size: 10rem;
+  /* font-weight: bold; */
+  color: #3366ff;
+  padding: 2rem;
+}
+.main-num-wrap > .ctrl-wrap {
+  position: relative;
+}
+.main-num-wrap > .ctrl-wrap > .ctrl-rail {
+  margin: 1rem 5rem;
+  width: 1rem;
+  height: calc(100% - 5rem);
+  border-radius: 2rem;
+  background: radial-gradient(farthest-corner at center, #79d665, #116d1f);
+}
+.main-num-wrap > .ctrl-wrap > .ctrl-ball {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 2rem);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #caf8b2, #45bc38);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3) inset;
+  cursor: pointer;
+}
+.main-num-wrap > .ctrl-wrap > .ctrl-ball:hover {
+  background: radial-gradient(circle at center, #caf8b2, #79d665);
+}
+.main-num-wrap > .ctrl-wrap > .ctrl-ball::before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: 0.1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fffe;
+  border-radius: 50%;
+  opacity: 0.7;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  transform: rotateX(125deg) rotateY(125deg);
+}
+
+.ball-wrap {
+  width: 60rem;
+  /* height: calc(100% - 25rem); */
+}
+.ball-wrap > p {
+  font-family: Yu-Gothic-Medium;
+  font-size: 2rem;
+  margin: 0.5rem;
+  color: #116d1f;
+}
+.ball-wrap > div {
+  width: 49rem;
+  max-height: 13rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+  display: flex;
+  align-content: flex-start;
+}
+.ball-wrap > div > div {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding: 0.3rem 0.3rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #fff9d1, #ffd419);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.2) inset;
+  color: #3366ff;
+}
+
+/* .waiting-num-wrap {
+  background-color: #ccc;
+}
+.drawn-num-wrap {
+  background-color: #555;
+} */
