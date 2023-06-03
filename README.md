@@ -1,3 +1,3 @@
 # Lottery-Machine
 
-[Live Demo](https://dreamwaygh.github.io/LotteryMachine/index.html)
+[Live Demo](https://dreamwaygh.github.io/Lottery-Machine)
