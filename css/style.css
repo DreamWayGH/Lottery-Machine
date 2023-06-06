@@ -1,14 +1,11 @@
 @font-face {
-  font-family: Yu-Gothic-Medium;
-  src: url(../lib/Yu-Gothic-Medium.ttf) format("truetype"),
-    url(../lib/Lucida-Handwriting-Italic.ttf) format("truetype"), local("arial"),
+  font-family: HARLOWSI;
+  src: url(../lib/HARLOWSI.TTF) format("truetype"),
     local("Microsoft JhengHei");
 }
 @font-face {
-  font-family: HARLOWSI;
-  src: url(../lib/HARLOWSI.TTF) format("truetype"),
-    url(../lib/Yu-Gothic-Medium.ttf) format("truetype"), local("arial"),
-    local("Microsoft JhengHei");
+  font-family: JhengHei;
+  src: local("Microsoft JhengHei");
 }
 
 ::-webkit-scrollbar {
@@ -60,7 +57,7 @@
   color: #1d6ab3;
 }
 .setting-wrap > button {
-  font-family: Yu-Gothic-Medium;
+  font-family: JhengHei;
   padding: 0.5rem 2rem;
   font-size: 2rem;
   font-weight: bold;
@@ -144,7 +141,7 @@
   /* height: calc(100% - 25rem); */
 }
 .ball-wrap > p {
-  font-family: Yu-Gothic-Medium;
+  font-family: JhengHei;
   font-size: 2rem;
   margin: 0.5rem;
   color: #116d1f;
