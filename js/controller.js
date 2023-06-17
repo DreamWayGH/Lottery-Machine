@@ -105,7 +105,13 @@ async function drawBall() {
       `#waitingWrap > div[data-num='${numberNow}']`
     );
     if (ballDiv != null) {
-      document.querySelector(`#drawnWrap`).appendChild(ballDiv);
+			ballDiv.classList.add('change');
+			setTimeout(() =>{
+				document.querySelector(`#drawnWrap`).appendChild(ballDiv);
+				setTimeout(() =>{
+					ballDiv.classList.remove('change');
+				}, 50)
+			}, 500)  
     }
   }, 1000);
 }

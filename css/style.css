@@ -168,6 +168,10 @@
   background: radial-gradient(circle at center, #fff9d1, #ffd419);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.2) inset;
   color: #3366ff;
+	transition: opacity 0.5s ease-in-out;
+}
+.ball-wrap > div > div.change {
+  opacity: 0;
 }
 
 /* .waiting-num-wrap {
